@@ -1,68 +1,152 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/menu.css" />
     <title>Delicious Bites Menu</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Wonderful Bites Menu</h1>
+      <p>
+        Welcome to Wonderful Bites! Enjoy our carefully prepared meals made with
+        love and fresh ingredients.
+      </p>
+    </header>
 
-    <h1>Wonderful Bites Menu</h1>
-    <p>Welcome to Wonderful Bites! Enjoy our carefully prepared meals made with love and fresh ingredients.</p>
+    <hr />
 
-    <hr>
+    <main>
+      <!-- Appetizers Section -->
+      <section id="appetizers">
+        <h2>Appetizers</h2>
 
-    <!-- Appetizers Section -->
-    <h2>Appetizers</h2>
-    <ul>
-        <li>
-            <strong>Garlic Bread</strong> – Crispy bread topped with garlic butter and herbs.
-        </li>
-        <li>
-            <strong>Bruschetta</strong> – Grilled bread with fresh tomatoes, basil, and olive oil.
-        </li>
-        <li>
-            <strong>Chicken Wings</strong> – Spicy grilled wings served with a dipping sauce.
-        </li>
-    </ul>
+        <ul class="menu-list">
+          <li>
+            <img src="images/garlic-bread.jpg" alt="Garlic Bread" />
+            <div class="menu-info">
+              <strong>Garlic Bread</strong>
+              <span class="price">KES 450</span>
+              <p>Crispy bread topped with garlic butter and herbs.</p>
+            </div>
+          </li>
 
-    <hr>
+          <li>
+            <img src="images/bruschetta.jpeg" alt="Bruschetta" />
+            <div class="menu-info">
+              <strong>Bruschetta</strong>
+              <span class="price">KES 500</span>
+              <p>Grilled bread with fresh tomatoes, basil, and olive oil.</p>
+            </div>
+          </li>
 
-    <!-- Main Courses Section -->
-    <h2>Main Courses</h2>
-    <ul>
-        <li>
-            <strong>Grilled Chicken</strong> – Tender chicken breast served with vegetables and rice.
-        </li>
-        <li>
-            <strong>Beef Burger</strong> – Juicy beef patty with cheese, lettuce, and tomato.
-        </li>
-        <li>
-            <strong>Vegetable Pasta</strong> – Pasta tossed with seasonal vegetables in a light sauce.
-        </li>
-    </ul>
+          <li>
+            <img src="images/chicken-wings.jpeg" alt="Chicken Wings" />
+            <div class="menu-info">
+              <strong>Chicken Wings</strong>
+              <span class="price">KES 750</span>
+              <p>Spicy grilled wings served with a dipping sauce.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-    <hr>
+      <hr />
 
-    <!-- Desserts Section -->
-    <h2>Desserts</h2>
-    <ul>
-        <li>
-            <strong>Chocolate Cake</strong> – Rich chocolate cake with a smooth frosting.
-        </li>
-        <li>
-            <strong>Ice Cream Sundae</strong> – Vanilla ice cream topped with chocolate sauce.
-        </li>
-        <li>
-            <strong>Fruit Salad</strong> – Fresh mixed fruits served chilled.
-        </li>
-    </ul>
+      <!-- Main Courses Section -->
+      <section id="mains">
+        <h2>Main Courses</h2>
 
-    <hr>
+        <ul class="menu-list">
+          <li>
+            <img src="images/grilled-chicken.jpg" alt="Grilled Chicken" />
+            <div class="menu-info">
+              <strong>Grilled Chicken</strong>
+              <span class="price">KES 1,200</span>
+              <p>Tender chicken breast served with vegetables and rice.</p>
+            </div>
+          </li>
 
+          <li>
+            <img src="images/beef-burger.jpeg" alt="Beef Burger" />
+            <div class="menu-info">
+              <strong>Beef Burger</strong>
+              <span class="price">KES 1,000</span>
+              <p>Juicy beef patty with cheese, lettuce, and tomato.</p>
+            </div>
+          </li>
+
+          <li>
+            <img src="images/vegetable-pasta.jpg" alt="Vegetable Pasta" />
+            <div class="menu-info">
+              <strong>Vegetable Pasta</strong>
+              <span class="price">KES 950</span>
+              <p>Pasta tossed with seasonal vegetables in a light sauce.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <!-- Desserts Section -->
+      <section id="desserts">
+        <h2>Desserts</h2>
+
+        <ul class="menu-list">
+          <li>
+            <img src="images/chocolate-cake.jpeg" alt="Chocolate Cake" />
+            <div class="menu-info">
+              <strong>Chocolate Cake</strong>
+              <span class="price">KES 600</span>
+              <p>Rich chocolate cake with smooth frosting.</p>
+            </div>
+          </li>
+
+          <li>
+            <img src="images/ice-cream.jpeg" alt="Ice Cream Sundae" />
+            <div class="menu-info">
+              <strong>Ice Cream Sundae</strong>
+              <span class="price">KES 450</span>
+              <p>Vanilla ice cream topped with chocolate sauce.</p>
+            </div>
+          </li>
+
+          <li>
+            <img src="images/fruit-salad.jpeg" alt="Fruit Salad" />
+            <div class="menu-info">
+              <strong>Fruit Salad</strong>
+              <span class="price">KES 400</span>
+              <p>Fresh mixed fruits served chilled.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <hr />
+    </main>
     <!-- Contact Link -->
-    <p>
-        <a href="contact.html">Contact Us</a>
-    </p>
+    <footer class="contact-us">
+      <h2>Contact Us</h2>
 
-</body>
+      <form class="contact-form">
+        <label>
+          Name
+          <input type="text" placeholder="Name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" placeholder="Email" required />
+        </label>
+
+        <label>
+          Message
+          <textarea rows="4" placeholder="Your message here..." required></textarea>
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </footer>
+  </body>
 </html>
